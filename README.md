@@ -1,4 +1,2 @@
 # ROS
-
-## Installation
-$sudo apt install curl gnupg2 lsb-release git meld build-essential libfontconfig1 mesa-common-dev libglu1-mesa-dev
+Ubuntu install of ROS Melodic http://wiki.ros.org/melodic/Installation/Ubuntu
