@@ -20,15 +20,15 @@ $sudo apt install pcl-tools
 $sudo rosdep init
 $rosdep update
 
-## Testing ROS with USB-Camera
-
+## Testing ROS with USB-Camera by open 3 terminal windows
+-----------------
 @Terminal#1
-$ roscore
-
+$roscore
+-----------------
 @Terminal#2
-$ sudo apt install ros-melodic-uvc_camera*
-$ sudo apt install ros-melodic-rqt*
-$ rosrun uvc_camera uvc_camera_node
-
+$sudo apt install ros-melodic-uvc_camera*
+$sudo apt install ros-melodic-rqt*
+$rosrun uvc_camera uvc_camera_node
+-----------------
 @Terminal#3
-$ rosrun rqt_gui rqt_gui
+$rosrun rqt_gui rqt_gui
