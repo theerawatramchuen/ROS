@@ -26,7 +26,7 @@ $rosdep update
 $roscore
 -----------------
 @Terminal#2
-$sudo apt install ros-melodic-uvc_camera*
+$sudo apt install ros-melodic-uvc-camera*
 $sudo apt install ros-melodic-rqt*
 $rosrun uvc_camera uvc_camera_node
 -----------------
