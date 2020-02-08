@@ -24,6 +24,9 @@ $rosdep update
 $sudo apt install ros-melodic-uvc-camera*
 $sudo apt install ros-melodic-rqt*
 
+## Install X Terminal Emulator
+http://www.linuxandubuntu.com/home/terminator-a-linux-terminal-emulator-with-multiple-terminals-in-one-window
+
 ## Testing ROS with USB-Camera by open 3 terminal windows
 -----------------
 @Terminal#1
