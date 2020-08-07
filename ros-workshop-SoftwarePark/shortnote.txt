@@ -1,0 +1,46 @@
+https://github.com/RobotCitizens/ros-workshop
+
+$ roscore
+$ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/opt/ros/kinetic/share/turtlebot_gazebo/worlds/empty.world
+$ roslaunch turtlebot_rviz_launchers view_robot.launch
+$ roslaunch turtlebot_teleop keyboard_teleop.launch
+$ roslaunch turtlebot_teleop logitech.launch
+
+Create map gmaping SLAM with Real Robot
+$ roscore
+$ roslaunch turtlebot_bringup minimal.launch  ### For SIM pls run gazebo
+$ roslaunch turtlebot_navigation gmapping_demo.launch
+$ roslaunch turtlebot_rviz_launchers view_navigation.launch
+$ roslaunch turtlebot_teleop logitech.launch  ### For joystick
+$ rosrun map_server map_saver -f /tmp/my_map
+
+Run the SLAM with Real ROBOT
+$ roscore
+$ roslaunch turtlebot_bringup minimal.launch  ### For SIM pls run gazebo
+$ roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
+$ roslaunch turtlebot_rviz_launchers view_navigation.launch
+$ roslaunch turtlebot_teleop logitech.launch  ### For joystick
+
+Run the SLAM with SIM Gazebo with map in /tmp/my_map.yaml
+$ roscore
+$ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/thee/Desktop/test
+$ roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
+$ roslaunch turtlebot_rviz_launchers view_navigation.launch
+$ roslaunch turtlebot_teleop logitech.launch  ### For joystick
+
+
+Run the obstacle avoidance
+$ rosrun my_robot move_avoidance.py
+
+Simulation SLAM map
+$ roscore
+$ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/thee/Desktop/test
+$ roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
+$ roslaunch turtlebot_rviz_launchers view_navigation.launch
+$ rosrun my_robot move_avoidance.py
+
+-----------------------------Day4-----------------------------
+
+
+
+
