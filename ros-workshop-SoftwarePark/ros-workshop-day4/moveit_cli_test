@@ -1,0 +1,6 @@
+use arm
+go vertical
+go resting
+go forward 0.1
+go backward 0.1
+go vertical
